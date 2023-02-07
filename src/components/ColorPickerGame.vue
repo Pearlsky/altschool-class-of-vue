@@ -9,11 +9,17 @@
 </template>
 
 <script>
-import { ref, reactive } from "@vue/reactivity";
+import { useColorPicker } from "../composables/color-picker";
 
 export default {
   setup() {
-    
+    const { colors, message, matchColor } = useColorPicker([
+      "green",
+      "red",
+      "blue",
+      "purple",
+    ]);
+    return { colors, message, matchColor };
   },
 };
 </script>
