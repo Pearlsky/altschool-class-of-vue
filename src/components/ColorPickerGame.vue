@@ -17,7 +17,7 @@ export default {
       "green",
       "red",
       "blue",
-      "purple",
+      "purple"
     ]);
     return { colors, message, matchColor };
   },
